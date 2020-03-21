@@ -1,8 +1,11 @@
 @charset "utf-8";
 /*
  * Font need to be defined in /public/index.html
- * in a <link rel="stylesheet" href="" /> tag
- * @import url('https://somefont');
+ * in a <link rel="" href="" /> tag
+ *
+ * then do this here :
+ * @import url('http://somefont');
  */
 
-body { }
+/* draw something here 🎨 */
+body {}

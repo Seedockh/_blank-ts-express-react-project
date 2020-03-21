@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
-import { Home } from './pages'
+import { Login, Home } from './pages'
 import User from './core/user'
 
 const user = localStorage.getItem('user')
@@ -12,10 +12,14 @@ const userInitialState = {
 // Define your reducer actions here
 const reducer = (prevState: UserState, action: UserAction): UserState => {
   switch (action.type) {
-    case 'setNickname':
+    case 'setUser':
+      if (!action.payload) {
+        localStorage.removeItem('user')
+        return { ...prevState, user: null }
+      }
+
       const user = { ...prevState.user, ...action.payload }
       localStorage.setItem('user', JSON.stringify(user))
-
       return { ...prevState, user }
     default:
       return prevState
@@ -23,8 +27,6 @@ const reducer = (prevState: UserState, action: UserAction): UserState => {
 }
 
 function App(): JSX.Element {
-  const user = User.GlobalState()
-
   return (
     <>
       <header>
@@ -39,6 +41,13 @@ function App(): JSX.Element {
           <Route
             exact
             path="/"
+            component={(): JSX.Element => {
+              return <Login />
+            }}
+          />
+          <Route
+            exact
+            path="/home"
             component={(): JSX.Element => {
               return <Home />
             }}
