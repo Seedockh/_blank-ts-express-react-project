@@ -20,6 +20,10 @@ node_modules/
 
 coverage/
 
+# Generated
+
+.dist/
+
 # Misc
 
 # Well, famous MacOS desktop services store

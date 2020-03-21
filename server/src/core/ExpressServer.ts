@@ -19,7 +19,7 @@ class ExpressServer {
 
 		this.server.listen(port, () => {
 			console.log(
-				chalk.bold.magenta(`💫  Server is running on localhost:${port}`),
+				chalk.bold.magenta(`💫  Server is running on http://localhost:${port}`),
 			)
 		})
 	}
