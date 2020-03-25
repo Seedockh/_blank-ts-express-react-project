@@ -1,9 +1,9 @@
-import { Router } from 'express'
+import { Router, Request, Response } from 'express'
 
 const api = Router()
 
-api.get('/', (req, res) => {
-	res.status(200).send("Now we're talking. Make this API rock ! 🚀")
+api.get('/', (req: Request, res: Response) => {
+	res.status(200).json({ hello: "Now we're talking. Make this API rock ! 🚀" })
 })
 
 // create any subroute you'd like with

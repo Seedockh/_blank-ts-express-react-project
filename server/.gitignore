@@ -2,6 +2,8 @@
 
 # Environment
 .env
+package-lock.json
+yarn.lock
 
 # Node
 
@@ -19,6 +21,10 @@ node_modules/
 # Tests
 
 coverage/
+
+# Generated
+
+.dist/
 
 # Misc
 
