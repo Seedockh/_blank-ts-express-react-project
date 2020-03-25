@@ -6,7 +6,11 @@ This is a blank pattern of TypeScript Express (server) React (app) project to be
 
 This project will use `@mhirba/` github registry, which need an [Authentication with a Personnal Access Token.](https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages)
 
-To do this :
+### Requirements
+- `nodeJS: ^13.11.*`
+- `yarn: ^1.22.*`
+
+### Token :
   - Go to your **Github** Settings and create a **Token** :
     ```
     Github >
@@ -20,6 +24,7 @@ To do this :
   - Create `~/.npmrc` file, that must contain :
     ```
       always-auth=true
+      @mhirba:registry=https://npm.pkg.github.com
       //npm.pkg.github.com/:_authToken=YOUR_GENERATED_TOKEN
     ```
   - Run `yarn` in `./client` and `./server` directories

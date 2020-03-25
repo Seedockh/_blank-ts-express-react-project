@@ -9,8 +9,8 @@
 		"test:unit": "yarn jest --config=.jestrc.js --maxWorkers 2 --forceExit --coverage --no-cache",
 		"test": "yarn test:static && yarn test:unit",
 		"dev": "yarn nodemon",
-		"lint": "yarn eslint 'src/**/*.ts' --fix",
-		"build": "yarn babel src/ --out-dir .dist/ --extensions \".ts\" --source-maps inline --quiet --copy-files"
+		"lint": "yarn eslint src/**/*.ts --fix",
+		"build": "yarn babel src/ --out-dir ./.dist/ --extensions \".ts\" --source-maps inline --quiet --copy-files"
 	},
 	"dependencies": {
 		"chalk": "^3.0.0",

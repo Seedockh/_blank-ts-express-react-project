@@ -2,8 +2,8 @@
 
 # Environment
 .env
-.package-lock.json
-.yarn-lock.json
+package-lock.json
+yarn.lock
 
 # Node
 
