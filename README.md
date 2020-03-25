@@ -2,6 +2,10 @@
 
 This is a blank pattern of TypeScript Express (server) React (app) project to be used as an already setupped and configured project.
 
+## Create a Pull Request
+
+[Follow those simple steps to create your own branch and being able to contribute to this repo.](http://kbroman.org/github_tutorial/pages/fork.html)
+
 ## Setup
 
 This project will use `@mhirba/` github registry, which need an [Authentication with a Personnal Access Token.](https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages)
@@ -28,10 +32,6 @@ This project will use `@mhirba/` github registry, which need an [Authentication 
       //npm.pkg.github.com/:_authToken=YOUR_GENERATED_TOKEN
     ```
   - Run `yarn` in `./client` and `./server` directories
-  
-## Create a Pull Request
-
-[Follow those simple steps to create your own branch and being able to contribute to this repo.](http://kbroman.org/github_tutorial/pages/fork.html)
 
 ## Client scripts
 
