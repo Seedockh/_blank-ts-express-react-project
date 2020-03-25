@@ -31,14 +31,12 @@ This project will use `@mhirba/` github registry, which need an [Authentication 
 
 ## Client scripts
 
-- `yarn install`
 - `yarn build`
 - `yarn test`
 - `yarn start`
 
 ## Server scripts
 
-- `yarn install`
 - `yarn lint`
 - `yarn test`
 - `yarn dev`
@@ -51,5 +49,4 @@ First, thanks the one who takes the initiative [**Peter**](https://github.com/Se
 ## Contributors
 
 - [**Majdi**](https://github.com/majdi/)
-
-You ? 💪
+- You ? 💪
