@@ -28,6 +28,10 @@ This project will use `@mhirba/` github registry, which need an [Authentication 
       //npm.pkg.github.com/:_authToken=YOUR_GENERATED_TOKEN
     ```
   - Run `yarn` in `./client` and `./server` directories
+  
+## Create a Pull Request
+
+[Follow those simple steps to create your own branch and being able to contribute to this repo.](http://kbroman.org/github_tutorial/pages/fork.html)
 
 ## Client scripts
 
