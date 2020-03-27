@@ -4,7 +4,7 @@ module.exports = {
 	tabWidth: 2,
 	useTabs: true,
 	// print semicolons at the ends of statements
-	semi: true,
+	semi: false,
 	// use single quotes instead of double quotes
 	singleQuote: true,
 	// print trailing commas wherever possible when multi-line

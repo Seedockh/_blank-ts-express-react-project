@@ -14,7 +14,7 @@
     ],
     "indent": false,
     "no-console": false,
-    "semicolon": false,
+    "semicolon": true,
     "member-access": [
       false
     ],
