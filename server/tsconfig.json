@@ -4,7 +4,9 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "module": "esnext",
-    "lib": ["esnext"],
+    "lib": [
+      "esnext"
+    ],
     "allowJs": false,
     "noEmit": true,
     "strict": true,
@@ -14,13 +16,25 @@
     "outDir": ".dist",
     "declaration": true,
     "isolatedModules": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
     "rootDir": "./",
     "baseUrl": "./",
     "paths": {
-      "~core/*": ["src/core/*"]
+      "~core/*": [
+        "src/core/*"
+      ]
     }
   },
-  "files": ["types.d.ts"],
-  "include": ["src/**/*.ts", "types.d.ts"],
-  "exclude": ["node_modules"]
+  "files": [
+    "types.d.ts"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "types.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

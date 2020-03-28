@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  api:
+    build: .
+    container_name: api
+    ports:
+      - 8084:8080
+    env_file:
+      - ../.env

@@ -1,4 +1,4 @@
-import dotenv from 'dotenv'
+import { config } from 'dotenv'
 import path from 'path'
 import { existsSync } from 'fs'
 import chalk from 'chalk'
@@ -11,7 +11,7 @@ const envPathName = path.join(process.cwd(), '.env')
 const neededValues = ['PORT']
 
 if (existsSync(envPathName)) {
-	dotenv.config()
+	config()
 
 	const missingValues = neededValues.filter(
 		(v: string): boolean => !process.env[v],
