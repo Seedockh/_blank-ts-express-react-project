@@ -1,6 +1,6 @@
 module.exports = api => {
-	api.cache(true);
-	const presets = ['@mhirba/next'];
+	api.cache(true)
+	const presets = ['@mhirba/next']
 	const plugins = [
 		'@babel/plugin-transform-runtime',
 		'@babel/plugin-proposal-optional-chaining',
@@ -12,6 +12,6 @@ module.exports = api => {
 			},
 		],
 		'@babel/plugin-proposal-class-properties',
-	];
-	return { presets, plugins };
-};
+	]
+	return { presets, plugins }
+}
